@@ -1,7 +1,7 @@
 <?php
 
 	class DB extends PDO{
-		public function exe($sql, array $bind){
+		public function exe($sql, array $bind = null){
 			$stmt = $this->prepare($sql);
 			$stmt -> execute($bind);
 			return $stmt;
