@@ -1,0 +1,361 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.title_font {
+    font-family: "Nanum Square";
+}
+
+.content_font {
+    font-family: "Nanum Barun Gothic";
+}
+
+.wrap {
+    position: relative;
+    width: 1440px;
+    height: 100%;
+}
+
+.layout {
+    position: relative;
+    width: 960px;
+}
+
+header {
+    height: 100px;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #ffffff;
+    padding-top: 15px;
+}
+
+.header_logo {
+    left: 0;
+    cursor: pointer;
+}
+
+.header_status {
+    right: 0;
+    position: absolute;
+    margin-top: 35px;
+    cursor: pointer;
+    color: #565656;
+    font-size: 16px;
+}
+
+.login {
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+
+.login_opa {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.login_img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.login_box {
+    position: absolute;
+    width: 430px;
+    height: 600px;
+    margin-top: 150px;
+    background-color: #ffffff;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+}
+
+.login_logo {
+    display: block;
+    margin-top: 45px;
+    margin-bottom: 45px;
+}
+
+.login_input {
+    width: 300px;
+    height: 60px;
+    background-color: #EFEFEF;
+    padding-left: 20px;
+    font-size: 20px;
+    border: 1px solid #95989A;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #898989;
+}
+
+.login_submit {
+    width: 300px;
+    height: 60px;
+    color: #ffffff;
+    background-color: #005d4e;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-top: 40px;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.login_submit:hover {
+    background-color: #ffffff;
+    color: #005d4e;
+    border: 1px solid #005d4e;
+}
+
+.login_findpw {
+    font-size: 16px;
+    color: #898989;
+}
+
+.vote {
+    position: relative;
+    width: 940px;
+    height: 2195px;
+    margin-top: 155px;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.vote_list {
+    position: relative;
+    height: 870px;
+    margin-top: 100px;
+}
+
+.vote_title {
+    font-size: 36px;
+    font-weight: bolder;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #232323;
+    padding-left: 10px;
+}
+
+.vote_area {
+    position: relative;
+    float: left;
+    width: 240px;
+    height: 370px;
+    border: 1px solid #015D4E;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: center;
+}
+
+.vote_area:nth-of-type(3n-2) {
+    margin-left: 20px;
+}
+
+.vote_area * {
+    color: #232323;
+}
+
+.vote_img {
+    width: 150px;
+    height: 150px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.vote_name {
+    font-size: 26px;
+}
+
+.vote_grade {
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.vote_submit {
+    width: 150px;
+    height: 40px;
+    border: 1px solid #232323;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.vote_submit:hover {
+    color: #ffffff;
+    background-color: #015d4e;
+}
+
+.vote_last_submit {
+    width: 270px;
+    height: 90px;
+    background-color: #015d4e;
+    color: #ffffff;
+    font-size: 24px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    margin-top: 80px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    transition: .3s;
+}
+
+.vote_last_submit:hover {
+    color: #015d4e;
+    background-color: #ffffff;
+    border: 1px solid #015d4e;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    border-top: 1px solid #015d4e;
+    text-align: center;
+    padding-top: 30px;
+}
+
+footer * {
+    font-size: 13px;
+}
+
+.dialog {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    z-index: 150;
+    display: none;
+}
+
+.dialog * {
+    color: #232323;
+}
+
+.dialog_area {
+    position: fixed;
+    width: 940px;
+    height: 600px;
+    background-color: #ffffff;
+    display: block;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.dialog_exit {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.dialog_title {
+    font-size: 32px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #232323;
+    margin-top: 50px;
+}
+
+.dialog_info {
+    position: relative;
+    margin-top: 35px;
+}
+
+.dialog_vote_img {
+    width: 300px;
+    height: 370px;
+    float: left;
+}
+
+.dialog_info_div {
+    width: 500px;
+    padding-top: 10px;
+    height: 370px;
+    margin-left: 40px;
+    float: left;
+}
+
+.dialog_vote_name {
+    font-size: 46px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.dialog_vote_grade {
+    color: #787878;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 11px;
+}
+
+.dialog_vote_idx {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.dialog_vote_list {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    width: 500px;
+    border-bottom: 2px solid #232323;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.dialog_vote_ul li{
+    font-size: 16px;
+    font-weight: bold;
+    list-style: none;
+    margin-bottom: 10px;
+}
