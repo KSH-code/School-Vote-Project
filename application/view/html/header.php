@@ -9,10 +9,9 @@
     <link rel="stylesheet" href="//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
     <link rel="stylesheet" href="/static/style/common.css">
     <script src="/static/js/jquery.js"></script>
-    <?php if (true) { ?>
+    <?php if (is_login()) { ?>
         <script src="/static/js/script.js"></script>
-    <?php }
-    if (true) { ?>
+    <?php } else { ?>
         <script src="/static/js/login.js"></script>
     <?php } ?>
     <title>세명컴고 투표 시스템</title>
@@ -39,16 +38,15 @@
             </div>
         </div>
     </div>
-    <?php if (false) {  // 로그인이 되있으면 true?>
+    <?php if (is_login()) { ?>
     <header>
         <div class="layout">
             <img class="header_logo" src="/static/image/header_logo.png" alt="header_logo">
-            <span class="title_font header_status">
-                <?php if (true) { ?>
-                    로그아웃
-                <?php } else { ?>
+            <form action="/action/user/logout">
+                <?php if (is_login()) { ?>
+                    <input type="submit" class="title_font header_status" value="로그아웃">
                 <?php } ?>
-            </span>
+            </form>
         </div>
     </header>
 <?php } ?>

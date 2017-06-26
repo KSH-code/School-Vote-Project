@@ -7,7 +7,10 @@
  */
 $result = $db->exe("SELECT * FROM `user` WHERE `id` = ? AND `pw` = ?",array($_POST['id'],$_POST['pw']))->fetch();
 if (is_array($result)) {
-    echo json_encode(array('result' => true, 'id' => $result['id'], "pw" => "pw"));
+    $_SESSION['idx'] = $result['idx'];
+    $_SESSION['id'] = $result['id'];
+    $_SESSION['pw'] = $result['pw'];
+    echo json_encode(array('result' => true));
 } else {
     echo json_encode(array('result' => false));
 }

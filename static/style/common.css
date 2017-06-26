@@ -50,10 +50,12 @@ header {
 .header_status {
     right: 0;
     position: absolute;
-    margin-top: 35px;
+    top: 35px;
     cursor: pointer;
     color: #565656;
     font-size: 16px;
+    border: none;
+    background-color: #fff;
 }
 
 .login {
@@ -179,7 +181,7 @@ header {
     color: #232323;
 }
 
-.vote_img {
+.vote_img, .vote_select_img {
     width: 150px;
     height: 150px;
     -webkit-border-radius: 50%;
@@ -188,6 +190,10 @@ header {
     margin-top: 30px;
     margin-bottom: 40px;
     cursor: pointer;
+}
+
+.vote_select_img {
+    position: absolute;
 }
 
 .vote_name {
@@ -353,7 +359,8 @@ footer * {
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
-.dialog_vote_ul li{
+
+.dialog_vote_ul li {
     font-size: 16px;
     font-weight: bold;
     list-style: none;
