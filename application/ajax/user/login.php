@@ -7,7 +7,7 @@
  */
 $result = $db->exe("SELECT * FROM `user` WHERE `id` = ? AND `pw` = ?"
     , array($_POST['id'], $_POST['pw']))->fetchAll();
-
+//test
 print_r($result);
 //if () {
 //    echo json_encode(array('result' => true, 'id' => $result['id'], "pw" => "pw"));
