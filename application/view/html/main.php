@@ -3,31 +3,31 @@
         <div class="vote_list vote_president">
             <p class="vote_title title_font">회장 선거</p>
             <div class="vote_area">
-                <img class="vote_img vote_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_president_img" data-idx="0" src="/static/image/vote_img.png" alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
             </div>
             <div class="vote_area">
-                <img class="vote_img vote_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_president_img" data-idx="0" src="/static/image/vote_img.png" alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
             </div>
             <div class="vote_area">
-                <img class="vote_img vote_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_president_img" data-idx="0" src="/static/image/vote_img.png" alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
             </div>
             <div class="vote_area">
-                <img class="vote_img vote_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_president_img" data-idx="0" src="/static/image/vote_img.png" alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
             </div>
             <div class="vote_area">
-                <img class="vote_img vote_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_president_img" data-idx="0" src="/static/image/vote_img.png" alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
@@ -36,31 +36,36 @@
         <div class="vote_list vote_vice_president">
             <p class="vote_title title_font">부회장 선거</p>
             <div class="vote_area">
-                <img class="vote_img vote_vice_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_vice_president_img" data-idx="0" src="/static/image/vote_img.png"
+                     alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
             </div>
             <div class="vote_area">
-                <img class="vote_img vote_vice_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_vice_president_img" data-idx="0" src="/static/image/vote_img.png"
+                     alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
             </div>
             <div class="vote_area">
-                <img class="vote_img vote_vice_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_vice_president_img" data-idx="0" src="/static/image/vote_img.png"
+                     alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
             </div>
             <div class="vote_area">
-                <img class="vote_img vote_vice_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_vice_president_img" data-idx="0" src="/static/image/vote_img.png"
+                     alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
             </div>
             <div class="vote_area">
-                <img class="vote_img vote_vice_president_img" src="/static/image/vote_img.png" alt="vote_img">
+                <img class="vote_img vote_vice_president_img" data-idx="0" src="/static/image/vote_img.png"
+                     alt="vote_img">
                 <p class="vote_name content_font">기호 1 : 문준수</p>
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>

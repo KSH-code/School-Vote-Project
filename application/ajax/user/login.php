@@ -5,7 +5,8 @@
  * Date: 2017-06-25
  * Time: 오후 12:33
  */
-$result = $db->exe("SELECT * FROM `user` WHERE `id` = ? AND `pw` = ?",array($_POST['id'],$_POST['pw']))->fetch();
+
+$result = $db->exe("SELECT * FROM `users` WHERE `id` = ? AND `pw` = ?", array($_POST['id'], $_POST['pw']))->fetch();
 if (is_array($result)) {
     $_SESSION['idx'] = $result['idx'];
     $_SESSION['id'] = $result['id'];
@@ -14,4 +15,3 @@ if (is_array($result)) {
 } else {
     echo json_encode(array('result' => false));
 }
-
