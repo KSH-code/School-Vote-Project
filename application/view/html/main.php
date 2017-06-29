@@ -32,6 +32,13 @@
                 <p class="vote_grade content_font">3학년</p>
                 <button class="vote_submit content_font">기호 정보</button>
             </div>
+            <?php if (is_admin()) { ?>
+                <div class="vote_add_area vote_area">
+                    <img class="vote_img vote_president_img" data-idx="0" src="/static/image/add_president.png"
+                         alt="vote_img">
+                    <p class="vote_name content_font">기호 등록</p>
+                </div>
+            <?php } ?>
         </div>
         <div class="vote_list vote_vice_president">
             <p class="vote_title title_font">부회장 선거</p>

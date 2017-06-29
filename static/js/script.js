@@ -1,6 +1,7 @@
 $(function () {
     $('.dialog_exit').click(function () {
         $('.dialog').fadeOut();
+        $('.input_dialog').fadeOut();
     });
     $('.vote_submit').click(function () {
         $('.dialog').fadeIn();
@@ -11,28 +12,53 @@ $(function () {
         'president': -1,
         'vice-president': -1
     };
+    $('.vote_add_area').click(function (e) {
+        $('.input_dialog').fadeIn();
+    })
+    var ext = [".png", "jpeg", ".jpg"];
+    $('.input_dialog_img').change(function () {
+            var filePath = $(this).val();
+            var fileExt = filePath.substr(filePath.length - 4, filePath.length);
+            var fileBool = false;
+            $.each(ext, function (index, value) {
+                if (value === fileExt) {
+                    fileBool = true;
+                    return false;
+                }
+            })
+            if (fileBool) {
+                var file = $(this)[0].files[0];
+                reader = new FileReader();
+                reader.onload = function (event) {
+                    $('.dialog_vote_img').attr('src', event.target.result);
+                }
+                reader.readAsDataURL(file);
+            }
+            else {
+                alert("유효한 확장자를 입력하세요!");
+            }
+        }
+    )
     $('.vote_president_img').click(function () {
-        $('.vote_president .vote_select_img').remove();
-        voting_list['president'] = $(this).data('idx');
-        console.log(voting_list);
-        $(this).before("<img class='vote_select_img' src='/static/image/vote_select_img.png'>");
+        if ($(this).parent().attr('class') !== "vote_add_area vote_area") {
+            $('.vote_president .vote_select_img').remove();
+            voting_list['president'] = $(this).data('idx');
+            $(this).before("<img class='vote_select_img' src='/static/image/vote_select_img.png'>");
+        }
     });
     $('.vote_vice_president_img').click(function () {
-        $('.vote_vice_president .vote_select_img').remove();
-        voting_list['vice-president'] = $(this).data('idx');
-        console.log(voting_list);
-        $(this).before("<img class='vote_select_img' src='/static/image/vote_select_img.png'>");
+        if ($(this).parent().attr('class') !== "vote_add_area vote_area") {
+            $('.vote_vice_president .vote_select_img').remove();
+            voting_list['vice-president'] = $(this).data('idx');
+            $(this).before("<img class='vote_select_img' src='/static/image/vote_select_img.png'>");
+        }
     });
     $('.vote_last_submit').click(function () {
-        if(voting_list['president'] != -1 && voting_list['president'] != -1) {
-            var check = confirm("정말로 투표하시겠습니까?");
-            if (check) {
-                $.post('/ajax/vote/vote', {}, function () {
-
-                })
-            } else {
-
-            }
+        var check = confirm("정말로 투표하시겠습니까?");
+        if (check) {
+            $.post('/ajax/vote/vote', {'voteData': voting_list}, function (result) {
+                console.log(result);
+            })
         }
     })
 });

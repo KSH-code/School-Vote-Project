@@ -38,6 +38,31 @@
             </div>
         </div>
     </div>
+    <div class="input_dialog">
+        <div class="dialog_area">
+            <img class="dialog_exit" src="/static/image/dialog_exit.png" alt="dialog_exit">
+            <p class="dialog_title title_font">회장 후보 정보</p>
+            <div class="dialog_info">
+                <input type="file" id="img" class="input_dialog_img">
+                <label for="img">
+                    <img class="dialog_vote_img" src="/static/image/add_president_img.png" alt="add_president_img">
+                </label>
+                <div class="dialog_info_div">
+                    <input type="text" class="dialog_vote_name input_dialog_vote_name title_font"
+                           placeholder="후보 이름 입력">
+                    <input type="text" class="dialog_vote_grade input_dialog_vote_name title_font"
+                           placeholder="후보 학년 입력">
+                    <p class="dialog_vote_list title_font">공약목록</p>
+                    <ul class="dialog_vote_ul input_dialog_vote_ul">
+                        <li><input class="title_font" type="text" placeholder="공약 입력"></li>
+                        <li><input class="title_font" type="text" placeholder="공약 입력"></li>
+                        <li><input class="title_font" type="text" placeholder="공약 입력"></li>
+                    </ul>
+                    <button class="input_dialog_submit content_font">후보 등록</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <?php if (is_login()) { ?>
     <header>
         <div class="layout">

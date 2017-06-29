@@ -11,6 +11,8 @@ if (is_array($result)) {
     $_SESSION['idx'] = $result['idx'];
     $_SESSION['id'] = $result['id'];
     $_SESSION['pw'] = $result['pw'];
+    $_SESSION['vote'] = $result['vote'];
+    $_SESSION['lv'] = $result['lv'];
     echo json_encode(array('result' => true));
 } else {
     echo json_encode(array('result' => false));
