@@ -31,7 +31,8 @@ $(function () {
                 reader = new FileReader();
                 reader.onload = function (event) {
                     $('.dialog_vote_img').attr('src', event.target.result);
-                }
+                    //ajax로 한다면 여기서 하삼
+                };
                 reader.readAsDataURL(file);
             }
             else {
