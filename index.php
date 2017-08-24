@@ -3,9 +3,9 @@
 header('content-type:text/html; charset=utf-8');
 session_start();
 
-require('/lib/function.php');
-require('/lib/config.php');
-require('/lib/dbconfig.php');
+require('./lib/function.php');
+require('./lib/config.php');
+require('./lib/dbconfig.php');
 
 if (is_ajax()) {
     require(PATH . 'ajax/' . CONTROLLER . '/' . METHOD . '.php');

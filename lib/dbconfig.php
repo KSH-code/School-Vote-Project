@@ -29,7 +29,7 @@ class DB extends PDO
     */
 }
 
-$db = new DB('mysql:host=localhost; dbname=school_vote; charset=utf8', 'root', '', array(
+$db = new DB('mysql:host=localhost;dbname=school_vote;charset=utf8', 'root', 'root', array(
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
     PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING
 ));
